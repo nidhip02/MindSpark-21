@@ -9,12 +9,12 @@ html, body {
   max-width: 200vw;
   height: auto;
 }
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
   .responsive{
     width: 200vw;
     height: auto;
   }
-}
+} */
 .background {
   background-size: cover;
   background-repeat: no-repeat;
