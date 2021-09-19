@@ -172,3 +172,9 @@ html, body {
   }
 
 }
+
+@media only screen and (max-device-width: 1366px) {
+  .background {
+    background-attachment: scroll;
+  }
+}
