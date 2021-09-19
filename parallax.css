@@ -93,6 +93,11 @@ html, body {
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
 
+@media only screen and (max-device-width: 1366px) {
+  .content-wrapper {
+    background-attachment: scroll;
+  }
+}
 
 .content-title {
   margin: 5vh;
