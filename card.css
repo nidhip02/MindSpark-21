@@ -33,7 +33,7 @@
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     border: none;
     cursor: pointer;
   }
@@ -116,6 +116,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 600px) {
+    .col-1-of-3 {
+       width: 100%;
+    }
+ }
   
   .card__side {
     height: 30rem;
@@ -240,7 +246,6 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
-  
   .card__cta {
     position: absolute;
     top: 50%;
@@ -254,7 +259,7 @@
   .card_details {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
   
   .info {
@@ -263,13 +268,13 @@
   }
   
   .row {
-    max-width: 114rem;
+    max-width: 100rem;
     margin: 0 auto;
   }
   
   .row:not(:last-child) {
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   
   .row::after {
@@ -289,4 +294,8 @@
   .row .col-1-of-3 {
     width: calc((100% - 3 * 6rem) / 3);
   }
+
+
+
+  
   
