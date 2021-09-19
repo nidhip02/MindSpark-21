@@ -13,7 +13,7 @@
   nav ul li a:hover {
     background: hsla(224, 62%, 58%, 0);
     color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 15px #fafbfc;
+    box-shadow: 0 0 15px #fafafc;
     text-shadow: 0 0 15px #fafbfc;
     transition: .5s;
     transform: scale(1.05);
@@ -273,6 +273,7 @@
     }
   
     .Navbar-toggle {
+      z-index: 1;
       position: absolute;
       top: 0;
     }
@@ -285,7 +286,6 @@
     }
     .Navbar-menu.is-active {
       width: 26rem;
-      z-index: 1;
     }
   
     .Navbar-brand {
@@ -299,6 +299,7 @@
     }
   
     .Navbar-quickLinks {
+      z-index: 1;
       white-space: nowrap;
       position: absolute;
       bottom: 0;

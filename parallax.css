@@ -3,14 +3,21 @@ html, body {
   overflow: hidden;
 }
 
+.responsive-img {
+  padding-left: 2.7vw;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
   will-change: transform;
-  /* -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -28,22 +35,26 @@ html, body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0);
 }
-.background:first-child {
-  /* background-image: url(1st.jpg); */
+ .background:first-child {
+  background-image: url();
   transform: translateY(-15vh);
 }
+
 .background:first-child .content-wrapper {
   transform: translateY(15vh);
 }
-.background:nth-child(2) {
+/* .background:nth-child(2) {
   background-image: url();
 }
 .background:nth-child(3) {
   background-image: url();
 }
+.background:nth-child(4) {
+  background-image: url();
+} */
 
-Set stacking context of slides
-.background:nth-child(1) {
+/* Set stacking context of slides */
+/* .background:nth-child(1) {
   z-index: 2;
 }
 
@@ -53,11 +64,12 @@ Set stacking context of slides
 
 .background:nth-child(3) {
   z-index: 2;
-} 
+}   */
+
 
 .content-wrapper {
-  /* padding-right: 5px; */
-  z-index: 2;
+  padding-right: 5px;
+  /* z-index: 3; */
   margin-right: 5vw;
   height: 100vh;
   display: flex;
@@ -76,19 +88,23 @@ Set stacking context of slides
 
 
 .content-title {
-  z-index: 3;
   margin: 5vh;
-  font-size: 15vh;
+  margin-bottom: 0;
+  font-size: 8vw;
   line-height: 1.4;
+  color: #fff;
+
 }
 
 .content-subtitle{
-    z-index: 3;
     margin: 5vh;
     text-align: left;
-    font-size: 4vh;
+    font-size: 3vh;
     line-height: 1.4;
+    color: #fff;
 }
+
+
 
 
 .background.up-scroll {
