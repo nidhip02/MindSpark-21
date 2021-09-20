@@ -38,7 +38,7 @@ html, body {
 
 @media screen and (max-width: 800px){
   .responsive-img{
-    width: 10vw;
+    width: 100vw;
     height: auto;
   }
 }
@@ -199,8 +199,3 @@ html, body {
 
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .background {
-    background-attachment: scroll;
-  }
-}
